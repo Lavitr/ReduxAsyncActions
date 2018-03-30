@@ -30,6 +30,9 @@
 .channel-button:hover{
     transform: scale(1.1);
 }
+.channel-button:active{
+    background-color: aqua;
+}
 .channel-button p{
     position: absolute;
     top:50%;
