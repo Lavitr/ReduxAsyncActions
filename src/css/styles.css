@@ -1,3 +1,69 @@
-h1{
-    color:red;
+.container{
+    margin:30px auto;
+    background-color: rgb(206, 212, 214);
+    border-radius:15px;
+    border: 5px solid rgb(106, 107, 110);
+}
+
+.wrapper{
+    background-color: lightgreen;
+}
+
+.invisible{
+    display: none;
+}
+
+.disp-block{
+    display: block;
+}
+
+.logo-wrapper{
+    background-color: slategrey;
+    position: relative;
+    margin:20px auto;
+    height: 150px;
+    width: 100%;
+    border-radius: 20%;
+    cursor: pointer;
+    border:3px solid rgb(236, 241, 236);
+}
+.logo-wrapper p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.0vh;
+    color: peachpuff;
+}
+
+.article-wrapper{
+    padding: 20px;
+    margin:15px;
+    background-color: rgb(140, 151, 142);
+    border-radius: 10px;
+    border:3px solid rgb(64, 65, 63);
+}
+
+article p{
+    margin :0 5%;
+    font-size: 15px;
+}
+
+a{
+    font-size:25px;
+    float:  right;
+}
+
+.article-wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn{
+    margin-bottom:20px;
+}
+
+.active{
+    background-color:rgb(145, 96, 12);
 }
