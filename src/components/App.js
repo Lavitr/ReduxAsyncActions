@@ -5,6 +5,7 @@ import  Button  from '../containers/Button'
  const App = () => (
   <div>
   < ChannelsField />
+  <Button />
   </div>
 )
 

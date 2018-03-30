@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchPosts } from '../actions'
-
+/*
 export class Button extends React.Component {
 
   handleClick(evt) {
@@ -24,3 +24,13 @@ export class Button extends React.Component {
     );
   }
 }
+*/
+const Button=()=>(
+    <button
+    onClick={e => this.handleClick(e)}
+    className="btn btn-primary btn-lg btn-block"
+        >Show NEWS
+  </button>
+);
+
+export default Button;
