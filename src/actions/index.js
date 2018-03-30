@@ -9,9 +9,8 @@ export const getChannel = channel => ({
   channel,
 });
 
-export const requestPosts = text => ({
+export const requestPosts =() => ({
   type: REQUEST_POSTS,
-  text,
 });
 
 export const receivePosts = json => ({
@@ -23,7 +22,7 @@ export const receivePosts = json => ({
 
 export function fetchPosts(channel) {
   return function (dispatch) {
-    dispatch(requestPosts('DAVAY'));
+    dispatch(requestPosts());
     return fetch(`https://newsapi.org/v1/articles?source=${channel}&apiKey=${MY_API_KEY}`)
       .then(
         response => response.json(),

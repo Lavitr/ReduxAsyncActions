@@ -1,9 +1,9 @@
 import React from 'react'
-import Channels from './Channels'
+import ChannelsField from './ChannelsField'
 
  const App = () => (
   <div>
-  <Channels/>
+  < ChannelsField />
   </div>
 )
 

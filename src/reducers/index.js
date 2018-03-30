@@ -1,4 +1,4 @@
-import { SELECT_CHANNEL, REQUEST_POSTS, RECEIVE_POSTS } from '../actions/actions';
+import { SELECT_CHANNEL, REQUEST_POSTS, RECEIVE_POSTS } from '../actions';
 
 
 const reducer = (state = {}, action) => {
