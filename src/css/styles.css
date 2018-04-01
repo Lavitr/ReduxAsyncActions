@@ -1,7 +1,10 @@
+body{
+    background-color: blanchedalmond;
+}
 .container{
     margin:30px auto;
     background-color: rgb(206, 212, 214);
-    border-radius:15px;
+    border-radius:1rem;
     border: 5px solid rgb(106, 107, 110);
 }
 
@@ -18,17 +21,17 @@
 }
 
 .channel-button{
-    background-color: slategrey;
+    background-color: rgb(98, 156, 51);
     position: relative;
     margin:20px auto;
     height: 150px;
     width: 100%;
-    border-radius: 20%;
+    border-radius:5em;
     cursor: pointer;
-    border:4px solid rgb(241, 190, 33);
+    border:4px solid rgb(88, 70, 13);
 }
 .channel-button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .channel-button:active{
     background-color: aqua;
@@ -45,9 +48,9 @@
 .article-wrapper{
     padding: 20px;
     margin:15px;
-    background-color: rgb(140, 151, 142);
+    background-color: rgb(164, 248, 179);
     border-radius: 10px;
-    border:3px solid rgb(64, 65, 63);
+    border:3px solid rgb(3, 53, 24);
 }
 
 article p{
@@ -68,8 +71,29 @@ a{
 
 .btn{
     margin-bottom:20px;
+    border:3px solid rgb(88, 70, 13);
+}
+
+.btn-primary{
+    color: peachpuff;
+}
+
+.btn-lg{
+    border-radius:25px;
 }
 
 .active{
     background-color:rgb(145, 96, 12);
+}
+img {
+    border: 3px solid rgb(32, 46, 5);
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 15px;
+}
+.shown-channel{
+    font-size: 28px;
+    color:rgb(88, 70, 13);;
 }

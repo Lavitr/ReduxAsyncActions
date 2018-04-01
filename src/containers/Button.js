@@ -2,35 +2,26 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchPosts } from '../actions'
-/*
-export class Button extends React.Component {
 
-  handleClick(evt) {
-    const { store } = this.context;
-    const channels = store.getState();
-    console.log(channels);
-    const channelString = channels.channel;
-    store.dispatch(fetchPosts(channelString));
-  }
-  render() {
-    return (
-
-      <button
-        onClick={e => this.handleClick(e)}
-        className="btn btn-primary btn-lg btn-block"
-            >Show NEWS
-      </button>
-
-    );
-  }
-}
-*/
-const Button=()=>(
-    <button
-    onClick={e => this.handleClick(e)}
-    className="btn btn-primary btn-lg btn-block"
-        >Show NEWS
+let Button = ({ getPosts, channel }) => (
+  <button
+    onClick={() => { getPosts(channel) }}
+    className="btn btn-primary btn-lg btn-block" >
+    Press to see top news from:<span className="shown-channel">{channel}</span>
   </button>
 );
+
+const mapStateToProps = (state) => ({
+  channel: state.channel
+})
+
+const mapDispatchToProps = {
+  getPosts: fetchPosts
+}
+
+Button = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Button)
 
 export default Button;
