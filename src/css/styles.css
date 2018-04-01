@@ -95,5 +95,6 @@ img {
 }
 .shown-channel{
     font-size: 28px;
-    color:rgb(88, 70, 13);;
+    color:rgb(88, 70, 13);
+    margin-left: 10px;
 }
