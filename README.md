@@ -5,7 +5,7 @@ Simple React-Redux example with async/sync actions using  Redux Thunk middleware
 
 ```
 git clone https://github.com/Lavitr/ReduxAsyncActions.git
-cd basic-react-redux-webpack4-boilerplate 
+cd ReduxAsyncActions 
 npm install
 npm start
 open http://localhost:8080  (should start automatically )
