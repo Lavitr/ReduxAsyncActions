@@ -3,8 +3,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { NewsItem } from '../components/NewsItem';
 
-let TopNews = ({ channels }) => {
+let TopNews = ({ channels, loading }) => {
     let topNews = null;
+
     if (channels) {
         topNews = channels.map((article, index) =>
             (
@@ -13,6 +14,9 @@ let TopNews = ({ channels }) => {
                 </div>
             )
         )
+    }
+    if (loading) {
+        topNews = <h3 className="loading-indicator">Loading ...</h3>
     }
 
     return (
@@ -23,7 +27,8 @@ let TopNews = ({ channels }) => {
 }
 
 const mapStateToProps = (state) => ({
-    channels: state.json
+    channels: state.json,
+    loading: state.loading
 })
 
 TopNews = connect(
@@ -32,5 +37,4 @@ TopNews = connect(
 )(TopNews)
 
 export default TopNews;
-
 

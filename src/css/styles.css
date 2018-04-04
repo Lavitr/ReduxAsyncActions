@@ -94,7 +94,12 @@ img {
     border-radius: 15px;
 }
 .shown-channel{
-    font-size: 28px;
-    color:rgb(88, 70, 13);
+    font-size: 35px;
+    color:rgb(241, 245, 27);
     margin-left: 10px;
+}
+.loading-indicator{
+    text-align: center;
+    font-size: 45px;
+    color:red;
 }
