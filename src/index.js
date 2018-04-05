@@ -8,11 +8,10 @@ import reducer from './reducers'
 import './css/styles.css'
 import App from "./components/App"
 
-const middleware = [logger, thunk]
 
 const store = createStore(
   reducer,
-  applyMiddleware(...middleware)
+  applyMiddleware(thunk,logger)
 )
 
 render(
