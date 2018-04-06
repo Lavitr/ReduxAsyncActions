@@ -11,7 +11,7 @@ import App from "./components/App"
 
 const store = createStore(
   reducer,
-  applyMiddleware(thunk,logger)
+  applyMiddleware(thunk, logger)
 )
 
 render(
