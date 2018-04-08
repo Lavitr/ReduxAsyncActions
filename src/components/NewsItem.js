@@ -11,5 +11,6 @@ const NewsItem = ({ article }) => (
   </article>
 );
 
-export { NewsItem };
+export default NewsItem ;
+
 
