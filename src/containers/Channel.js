@@ -6,7 +6,7 @@ let Channel = ({ channelName, channelString, onClick, active }) => (
     <div onClick={onClick} className=" col-lg-2 col-md-4 col-sm-6 ">
         <div className="channel-button"
             style={{ backgroundColor: active === channelString ? 'orange' : '' }}>
-            <p className="">{channelName}</p>
+            <p>{channelName}</p>
         </div>
     </div>
 )
