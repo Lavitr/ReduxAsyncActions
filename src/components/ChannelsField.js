@@ -9,8 +9,9 @@ const ChannelsField = () => (
     <Channel channelName="CNN" channelString="cnn" />
     <Channel channelName="FT" channelString="financial-times" />
     <Channel channelName="ESPN" channelString="espn" />
-    <Channel channelName="GOOGLE" channelString="google-news" />
+    <Channel channelName="TIME" channelString="time" />
   </div>
 );
 
 export default ChannelsField;
+
