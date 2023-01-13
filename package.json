@@ -25,7 +25,7 @@
     "redux-logger": "^3.0.6",
     "style-loader": "^0.20.3",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
